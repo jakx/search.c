@@ -1,0 +1,14 @@
+Make sure firefox is installed
+
+Run 'make install' to install the program 
+	Run: 'search my search query' to launch a google search in firefox
+
+
+Optional: create a function in bash.rc to run 'google my search query' and close
+
+	google() {
+	    /usr/bin/search "$*" &
+	    exit
+	}
+
+
