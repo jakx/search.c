@@ -1,12 +1,15 @@
 Make sure firefox is installed
 
+After cloning the project, cd into the directory.
+
 Run 'make install' to install the program 
-	Run: 'search my search query' to launch a google search in firefox
+
+Run: 'search my search query' to launch a google search in firefox
 
 
-Optional: create a function in bash.rc to run 'google my search query' and close
+I wanted my terminal to close after running my search so I created a function in my bash.rc
 
-	google() {
+	g() {
 	    /usr/bin/search "$*" &
 	    exit
 	}
