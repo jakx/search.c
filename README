@@ -9,11 +9,11 @@ Run: 'search my search query' to launch a google search in firefox
 Run: 'search -b chromium-browser my search query' to launch a google search in chromium
 
 
-If you want your terminal to close after running search add to your bash.rc
+If you want to run the command with "g" instead of "search" add to your bash.rc
 
 	g() {
 	    /usr/bin/search "$@*" &
-	    exit
+#	    exit  # close terminal 
 	}
 
 
