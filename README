@@ -6,11 +6,13 @@ Run 'make install' to install the program
 
 Run: 'search my search query' to launch a google search in firefox
 
+Run: 'search -b chromium-browser my search query' to launch a google search in chromium
 
-I wanted my terminal to close after running my search so I created a function in my bash.rc
+
+If you want your terminal to close after running search add to your bash.rc
 
 	g() {
-	    /usr/bin/search "$*" &
+	    /usr/bin/search "$@*" &
 	    exit
 	}
 
